@@ -29,7 +29,7 @@ export default function Home({ allPostsData }) {
         <p>Nam Phạm Đình Porfolio</p>
         <p>
           (This is a website Intro my Project - ALL GREAT OF A TIME{' '}
-          <a href="https://nextjs.org/learn">My CV</a>.)
+          <a href="posts/namdz">My CV</a>.)
         </p>
         <h2><Alert type='success'><Link href='/first-post' /> </Alert></h2>
       </section>
@@ -39,13 +39,13 @@ export default function Home({ allPostsData }) {
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
-              <li className={utilStyles.listItem} key={id}>
-                <Link href={`/posts/${id}`}>{title}</Link>
-                <br />
-                <small className={utilStyles.lightText}>
-                  <Date dateString={date} />
-                </small>
-              </li>
+
+              <Link href={`/posts/${id}`}>{title}</Link>
+              <br />
+              <small className={utilStyles.lightText}>
+                <Date dateString={date} />
+              </small>
+
             </li>
           ))}
         </ul>

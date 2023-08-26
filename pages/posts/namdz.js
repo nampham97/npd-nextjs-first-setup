@@ -11,7 +11,7 @@ function namdz() {
                 alt="Your Name"
             />
             <h2>
-                <Link href="/posts/first-post">Back to post</Link>
+                <Link href="/">Back to post</Link>
             </h2>
         </>
 
